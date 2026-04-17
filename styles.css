@@ -1,18 +1,18 @@
-﻿/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   Autonomous Intelligence Systems â€” Project Dashboard
-   Light Mode â€” matches systems-hub.example.com
-   Palette: warm ivory Â· brand emerald Â· sage Â· charcoal
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+/* 
+   Autonomous Intelligence Systems  Project Dashboard
+   Light Mode  matches systems-hub.example.com
+   Palette: warm ivory  brand emerald  sage  charcoal
+    */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap');
 
 :root {
-    /* â”€â”€ Brand Palette (Carrd site) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-    --bg-color:        #F5EBE0;          /* warm ivory â€” Carrd background    */
+    /*  Brand Palette (Carrd site)  */
+    --bg-color:        #F5EBE0;          /* warm ivory  Carrd background    */
     --bg-alt:          #EDE3D8;          /* slightly darker cream            */
     --surface:         #FFFFFF;          /* card front face                  */
     --surface-alt:     #F8F3EE;          /* softer card variant              */
-    --surface-flip:    #003D30;          /* card back â€” deep emerald         */
+    --surface-flip:    #003D30;          /* card back  deep emerald         */
     --card-border:     rgba(0, 109, 91, 0.16);
     --card-border-h:   rgba(0, 109, 91, 0.40);
     --card-shadow:     0 4px 20px rgba(0, 80, 60, 0.08);
@@ -35,7 +35,7 @@
     --font-ui:         'Outfit', sans-serif;
 }
 
-/* â”€â”€ Reset â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Reset  */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -48,14 +48,14 @@ body {
     min-height: 100vh;
 }
 
-/* â”€â”€ Layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Layout  */
 .container {
     max-width: 1080px;
     margin: 0 auto;
     padding: 52px 24px 72px;
 }
 
-/* â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Header  */
 header {
     text-align: center;
     margin-bottom: 52px;
@@ -171,7 +171,7 @@ header > p.subtitle {
 #syncStatus.success { background: var(--success-bg); color: var(--success); border: 1px solid rgba(5,150,105,0.25); }
 #syncStatus.error   { background: var(--warning-bg); color: var(--warning); border: 1px solid rgba(217,119,6,0.25); }
 
-/* â”€â”€ Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Grid  */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -179,7 +179,7 @@ header > p.subtitle {
 }
 .span-2 { grid-column: span 2; }
 
-/* â”€â”€ Flip Card System â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Flip Card System  */
 .flip-card { perspective: 1200px; }
 
 .flip-card-inner {
@@ -252,7 +252,7 @@ header > p.subtitle {
 }
 @keyframes hintPulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
 
-/* â”€â”€ Card Components â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Card Components  */
 h2 {
     font-family: var(--font-head);
     font-size: 1.25rem;
@@ -324,7 +324,7 @@ a:hover { color: var(--accent-mid); text-decoration: underline; }
 .flip-card-back a { color: var(--accent-light); }
 .flip-card-back a:hover { color: #fff; }
 
-/* â”€â”€ Token Feed â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Token Feed  */
 .calc-results { display: flex; gap: 12px; margin-top: 18px; }
 
 .result {
@@ -342,7 +342,7 @@ a:hover { color: var(--accent-mid); text-decoration: underline; }
 .highlight-result { background: rgba(0,109,91,0.06); border-color: rgba(0,109,91,0.18); }
 .highlight-result h4 { color: var(--accent); }
 
-/* â”€â”€ Section Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Section Header  */
 .section-header {
     display: flex;
     justify-content: space-between;
@@ -359,7 +359,7 @@ a:hover { color: var(--accent-mid); text-decoration: underline; }
     color: var(--accent);
 }
 
-/* â”€â”€ Project Cards (portfolio â€” no flip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Project Cards (portfolio  no flip)  */
 .project-card {
     background: var(--surface);
     border: 1px solid var(--card-border);
@@ -384,7 +384,7 @@ a:hover { color: var(--accent-mid); text-decoration: underline; }
     border-color: var(--card-border-h);
 }
 
-/* â”€â”€ Add Project Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Add Project Modal  */
 .modal-overlay {
     display: none;
     position: fixed;
@@ -478,7 +478,7 @@ a:hover { color: var(--accent-mid); text-decoration: underline; }
 
 #modalError { font-size: 0.82rem; color: var(--warning); margin-top: 10px; display: none; }
 
-/* â”€â”€ Agent Activity Log â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Agent Activity Log  */
 .activity-log-container {
     background: var(--surface);
     border: 1px solid var(--card-border);
@@ -523,7 +523,7 @@ a:hover { color: var(--accent-mid); text-decoration: underline; }
     white-space: pre-wrap;
 }
 
-/* â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/*  Responsive  */
 @media (max-width: 768px) {
     .grid { grid-template-columns: 1fr; }
     .span-2 { grid-column: span 1; }
@@ -534,5 +534,3 @@ a:hover { color: var(--accent-mid); text-decoration: underline; }
     .flip-card-inner { min-height: auto !important; }
     .flip-hint { display: none; }
 }
-
-

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,7 +19,7 @@
 
     <div class="container">
 
-        <!-- â”€â”€ HEADER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+        <!--  HEADER  -->
         <header>
             <div class="logo-area">
                 <div class="glow-dot"></div>
@@ -37,59 +37,59 @@
 
             <div class="header-actions">
                 <a href="#" target="_blank" class="btn btn-primary" id="btn-website">
-                    ðŸŒ Visit Website
+                     Visit Website
                 </a>
                 <a href="#" target="_blank" class="btn btn-secondary" id="btn-sheets">
-                    ðŸ“Š Open Sheets
+                     Open Sheets
                 </a>
                 <button class="btn btn-primary" id="btn-new-project" onclick="openModal()">
-                    âž• Add Project
+                     Add Project
                 </button>
                 <button class="btn btn-sync" id="btn-sync" onclick="syncToSheets()">
-                    ðŸ”„ Sync to Sheets
+                     Sync to Sheets
                 </button>
                 <span id="syncStatus"></span>
             </div>
         </header>
 
-        <!-- â”€â”€ AI ENGINES GRID â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+        <!--  AI ENGINES GRID  -->
         <div class="grid" id="enginesGrid">
 
-            <!-- AI Engines â€” spans full width -->
+            <!-- AI Engines  spans full width -->
             <div class="flip-card span-2" id="card-ai-engines">
                 <div class="flip-card-inner">
                     <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header">
-                            <h2>ðŸ§  AI Engines</h2>
+                            <h2> AI Engines</h2>
                             <span class="badge badge-active">Live Feed</span>
                         </div>
                         <p>OpenAI GPT-4o &amp; Google Gemini powering your agent ecosystem in real time.</p>
                         <div class="calc-results">
                             <div class="result">
                                 <span>OpenAI (GPT-4o)</span>
-                                <h4 id="liveOpenAITokens">â€” Tokens</h4>
+                                <h4 id="liveOpenAITokens"> Tokens</h4>
                                 <p class="cost-line">Est. Cost: <strong id="liveOpenAICost">$0.00</strong></p>
                             </div>
                             <div class="result highlight-result">
                                 <span>Gemini (1.5 Pro)</span>
-                                <h4 id="liveGeminiTokens">â€” Tokens</h4>
+                                <h4 id="liveGeminiTokens"> Tokens</h4>
                                 <p class="cost-line">Est. Cost: <strong id="liveGeminiCost">$0.00</strong></p>
                             </div>
                         </div>
-                        <p class="flip-hint">Hover for details â†º</p>
+                        <p class="flip-hint">Hover for details </p>
                     </div>
                     <!-- BACK -->
                     <div class="flip-card-back">
                         <div class="card-header">
-                            <h2>ðŸ§  Token Tracking Details</h2>
+                            <h2> Token Tracking Details</h2>
                             <span class="badge badge-info">How It Works</span>
                         </div>
                         <p>Usage is captured automatically by <code>scripts/token_logger.py</code> every time a bot or
                             script calls an AI API.</p>
                         <div class="metric-box dark-box" style="margin-top: 14px;">
-                            <p><strong>OpenAI GPT-4o:</strong> $0.005 / 1K prompt Â· $0.015 / 1K completion</p>
-                            <p style="margin-top: 8px;"><strong>Gemini 1.5 Pro:</strong> $1.25 / 1M prompt Â· $3.75 / 1M
+                            <p><strong>OpenAI GPT-4o:</strong> $0.005 / 1K prompt  $0.015 / 1K completion</p>
+                            <p style="margin-top: 8px;"><strong>Gemini 1.5 Pro:</strong> $1.25 / 1M prompt  $3.75 / 1M
                                 completion</p>
                         </div>
                         <p class="helper" style="margin-top: 12px;">Call <code>log_openai_usage()</code> or
@@ -105,29 +105,29 @@
                     <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header">
-                            <h2>âœ‰ï¸ Gmail App Password</h2>
+                            <h2> Gmail App Password</h2>
                             <span class="badge badge-active">Active</span>
                         </div>
-                        <p>Secure app-specific password that lets your agent read the inbox â€” without exposing your real
+                        <p>Secure app-specific password that lets your agent read the inbox  without exposing your real
                             Google login.</p>
                         <div class="metric-box" style="margin-top: auto;">
                             <p><strong>Cost:</strong> Unlimited / Free</p>
                             <p style="margin-top: 6px;"><strong>Status:</strong> <span
                                     style="color: var(--success);">Configured</span></p>
                         </div>
-                        <p class="flip-hint">Hover for details â†º</p>
+                        <p class="flip-hint">Hover for details </p>
                     </div>
                     <!-- BACK -->
                     <div class="flip-card-back">
                         <div class="card-header">
-                            <h2>âœ‰ï¸ Gmail â€” Management</h2>
+                            <h2> Gmail  Management</h2>
                             <span class="badge badge-info">Config</span>
                         </div>
                         <p>Used by the Discord bot and Autopilot daemon for IMAP inbox access &amp; email triage.</p>
                         <div class="metric-box dark-box" style="margin-top: 14px;">
                             <p><strong>Manage Key:</strong><br>
-                                <a href="https://myaccount.google.com/apppasswords" target="_blank">ðŸ”— Google Security
-                                    Portal â†—</a>
+                                <a href="https://myaccount.google.com/apppasswords" target="_blank"> Google Security
+                                    Portal </a>
                             </p>
                             <p style="margin-top: 10px;"><strong>Env Key:</strong> <code>SMTP_PASSWORD</code></p>
                         </div>
@@ -143,7 +143,7 @@
                     <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header">
-                            <h2>ðŸŽ® Discord Bot</h2>
+                            <h2> Discord Bot</h2>
                             <span class="badge badge-active">Active</span>
                         </div>
                         <p>Secret token that gives your Staff Officer agent its Discord identity and lets it send
@@ -152,20 +152,20 @@
                             <p><strong>Cost:</strong> Unlimited / Free</p>
                             <p style="margin-top: 6px;"><strong>Sweep Interval:</strong> Every 15 min</p>
                         </div>
-                        <p class="flip-hint">Hover for details â†º</p>
+                        <p class="flip-hint">Hover for details </p>
                     </div>
                     <!-- BACK -->
                     <div class="flip-card-back">
                         <div class="card-header">
-                            <h2>ðŸŽ® Discord â€” Management</h2>
+                            <h2> Discord  Management</h2>
                             <span class="badge badge-info">Config</span>
                         </div>
                         <p>The bot handles <code>/settings</code>, <code>/sweep</code>, <code>/goal</code>,
                             <code>/urgency</code>, and <code>/help</code> slash commands.</p>
                         <div class="metric-box dark-box" style="margin-top: 14px;">
                             <p><strong>Manage Bot:</strong><br>
-                                <a href="https://discord.com/developers/applications" target="_blank">ðŸ”— Discord
-                                    Developer Portal â†—</a>
+                                <a href="https://discord.com/developers/applications" target="_blank"> Discord
+                                    Developer Portal </a>
                             </p>
                             <p style="margin-top: 10px;"><strong>Env Key:</strong> <code>DISCORD_BOT_TOKEN</code></p>
                         </div>
@@ -180,10 +180,10 @@
                     <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header">
-                            <h2>ðŸ§‘â€ðŸ’» Antigravity AI (Pair Programmer)</h2>
+                            <h2> Antigravity AI (Pair Programmer)</h2>
                             <span class="badge badge-green">Tool</span>
                         </div>
-                        <p>Your dedicated AI coding partner â€” building and refining this entire system.</p>
+                        <p>Your dedicated AI coding partner  building and refining this entire system.</p>
                         <div class="metric-box dark-box" style="margin-top: 16px;">
                             <p
                                 style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.07);">
@@ -196,20 +196,20 @@
                             <p>Running Discord, Bluesky, and all agents 24/7 uses <strong
                                     style="color: var(--success);">zero</strong> Antigravity credits.</p>
                         </div>
-                        <p class="flip-hint">Hover for details â†º</p>
+                        <p class="flip-hint">Hover for details </p>
                     </div>
                     <!-- BACK -->
                     <div class="flip-card-back">
                         <div class="card-header">
-                            <h2>ðŸ§‘â€ðŸ’» Antigravity â€” Usage Guide</h2>
+                            <h2> Antigravity  Usage Guide</h2>
                             <span class="badge badge-info">Billing</span>
                         </div>
                         <p>Antigravity credits are consumed <em>only</em> when you are in an active design or coding
                             conversation.</p>
                         <div class="metric-box dark-box" style="margin-top: 14px;">
-                            <p><strong>âœ… Uses Credits:</strong> Requesting features, writing code, debugging, generating
+                            <p><strong> Uses Credits:</strong> Requesting features, writing code, debugging, generating
                                 tools.</p>
-                            <p style="margin-top: 8px;"><strong>ðŸš« Does NOT use credits:</strong> Discord bot running
+                            <p style="margin-top: 8px;"><strong> Does NOT use credits:</strong> Discord bot running
                                 24/7, Bluesky agent posting, email triage sweeps, dashboard serving.</p>
                         </div>
                         <p class="helper" style="margin-top: 12px;">Check your quota at the portal where you downloaded
@@ -221,17 +221,17 @@
 
         </div><!-- /enginesGrid -->
 
-        <!-- â”€â”€ AGENT ACTIVITY LOG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+        <!--  AGENT ACTIVITY LOG  -->
         <div class="section-header" style="margin-top: 40px;">
-            <h2>ðŸ¤– Agent Activity Log</h2>
+            <h2> Agent Activity Log</h2>
         </div>
         <div class="activity-log-container" id="agentActivityLog">
             <p style="color: var(--text-muted); padding: 20px;">Loading agent activity...</p>
         </div>
 
-        <!-- â”€â”€ PROJECTS PORTFOLIO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+        <!--  PROJECTS PORTFOLIO  -->
         <div class="section-header">
-            <h2>ðŸš€ Project Portfolio</h2>
+            <h2> Project Portfolio</h2>
         </div>
 
         <div class="grid" id="projectsGrid">
@@ -240,11 +240,11 @@
 
     </div><!-- /container -->
 
-    <!-- â”€â”€ MODAL: ADD PROJECT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!--  MODAL: ADD PROJECT  -->
     <div class="modal-overlay" id="projectModalOverlay">
         <div class="modal">
-            <button class="modal-close" onclick="closeModal()">Ã—</button>
-            <h3>ðŸš€ Add New Business</h3>
+            <button class="modal-close" onclick="closeModal()"></button>
+            <h3> Add New Business</h3>
             <p class="modal-sub">Log a project to your portfolio and sync it to Google Sheets.</p>
 
             <form id="addProjectForm" onsubmit="event.preventDefault(); submitProject();">
@@ -278,7 +278,7 @@
     </div>
 
     <script>
-        // â”€â”€ Live AI Telemetry â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        //  Live AI Telemetry 
         async function fetchAIUsage() {
             try {
                 const res = await fetch('/api/billing_usage');
@@ -308,7 +308,7 @@
                 let html = '<div class="log-list">';
                 logs.forEach(log => {
                     const isErr = log.type === 'error';
-                    const icon = isErr ? 'âš ï¸' : 'âœ…';
+                    const icon = isErr ? '' : '';
                     const rowClass = isErr ? 'log-row log-error' : 'log-row log-success';
                     const dateStr = new Date(log.timestamp).toLocaleString();
 
@@ -332,14 +332,14 @@
             }
         }
 
-        // â”€â”€ Antigravity Session Count â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        //  Antigravity Session Count 
         function fetchUsage() {
             fetch('/api/usage')
                 .then(r => r.json())
                 .then(data => {
                     const el = document.getElementById('ag-sessions');
                     if (el) {
-                        el.innerText = data.sessions ?? 'â€”';
+                        el.innerText = data.sessions ?? '';
                     }
                 })
                 .catch(() => { });
@@ -349,7 +349,7 @@
             try {
                 const res = await fetch('/api/ui_config');
                 const data = await res.json();
-                document.title = data.brand_name + ' â€” ' + data.brand_sub;
+                document.title = data.brand_name + '  ' + data.brand_sub;
                 document.getElementById('ui-brand-name').innerText = data.brand_name;
                 document.getElementById('ui-brand-sub').innerText = data.brand_sub;
                 document.getElementById('ui-subtitle').innerText = data.subtitle;
@@ -372,7 +372,7 @@
             fetchAgentLogs();
         }, 15000);
 
-        // â”€â”€ Projects Portfolio â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        //  Projects Portfolio 
         function renderProjects(data) {
             const grid = document.getElementById('projectsGrid');
             if (!grid) return;
@@ -393,13 +393,13 @@
 
                 card.innerHTML = `
                     <div class="card-header">
-                        <h2 style="font-size: 1.2rem;">ðŸš€ ${proj.name || 'Untitled Project'}</h2>
+                        <h2 style="font-size: 1.2rem;"> ${proj.name || 'Untitled Project'}</h2>
                         <span class="badge ${badgeClass}">${proj.status || 'Unknown'}</span>
                     </div>
                     <p style="margin-top: 6px; color: var(--text-muted); font-size: 0.95rem;">${proj.description || ''}</p>
                     <div class="metric-box dark-box" style="margin-top: 14px;">
-                        <p><strong>Date:</strong> ${proj.date_completed || 'â€”'}</p>
-                        <p style="margin-top: 5px; font-size: 0.83rem; color: var(--text-muted);">ID: ${proj.id || 'â€”'}</p>
+                        <p><strong>Date:</strong> ${proj.date_completed || ''}</p>
+                        <p style="margin-top: 5px; font-size: 0.83rem; color: var(--text-muted);">ID: ${proj.id || ''}</p>
                     </div>
                 `;
                 grid.appendChild(card);
@@ -411,16 +411,16 @@
             .then(renderProjects)
             .catch(() => {
                 const grid = document.getElementById('projectsGrid');
-                if (grid) grid.innerHTML = '<p style="color: var(--text-muted); grid-column: span 2;">Could not load projects â€” is the server running?</p>';
+                if (grid) grid.innerHTML = '<p style="color: var(--text-muted); grid-column: span 2;">Could not load projects  is the server running?</p>';
             });
 
-        // â”€â”€ Sync to Sheets â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        //  Sync to Sheets 
         function syncToSheets() {
             const btn = document.getElementById('btn-sync');
             const status = document.getElementById('syncStatus');
 
             btn.disabled = true;
-            btn.innerText = 'â³ Syncing...';
+            btn.innerText = ' Syncing...';
             status.style.display = 'none';
 
             fetch('/api/sync_projects', { method: 'POST' })
@@ -428,24 +428,24 @@
                 .then(data => {
                     status.className = data.status === 'ok' ? 'success' : 'error';
                     status.innerText = data.status === 'ok'
-                        ? 'âœ“ Synced to Sheets!'
-                        : 'âš  Sync failed â€” check terminal';
+                        ? ' Synced to Sheets!'
+                        : ' Sync failed  check terminal';
                     status.style.display = 'inline';
                     setTimeout(() => { status.style.display = 'none'; }, 4000);
                 })
                 .catch(() => {
                     status.className = 'error';
-                    status.innerText = 'âš  Server error';
+                    status.innerText = ' Server error';
                     status.style.display = 'inline';
                     setTimeout(() => { status.style.display = 'none'; }, 4000);
                 })
                 .finally(() => {
                     btn.disabled = false;
-                    btn.innerText = 'ðŸ”„ Sync to Sheets';
+                    btn.innerText = ' Sync to Sheets';
                 });
         }
 
-        // â”€â”€ Project Modal Logic â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        //  Project Modal Logic 
         function openModal() {
             document.getElementById('projectModalOverlay').classList.add('open');
             document.getElementById('projName').focus();
@@ -467,7 +467,7 @@
             if (!name || !desc) return;
 
             btn.disabled = true;
-            btn.innerText = 'â³ Saving...';
+            btn.innerText = ' Saving...';
             err.style.display = 'none';
 
             fetch('/api/add_project', {
@@ -486,12 +486,12 @@
                         // Auto-sync to sheets after adding
                         syncToSheets();
                     } else {
-                        err.innerText = 'âš  ' + (data.message || 'Error saving project');
+                        err.innerText = ' ' + (data.message || 'Error saving project');
                         err.style.display = 'block';
                     }
                 })
                 .catch(() => {
-                    err.innerText = 'âš  Server communication error';
+                    err.innerText = ' Server communication error';
                     err.style.display = 'block';
                 })
                 .finally(() => {

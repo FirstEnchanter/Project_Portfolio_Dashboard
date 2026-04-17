@@ -1,10 +1,10 @@
-﻿# ðŸš€ Autonomous Systems Dashboard
+#  Autonomous Systems Dashboard
 
 The centralized master control panel for the Autonomous Systems agent ecosystem. This dashboard provides real-time visibility into AI token consumption, agent activity logs, and project portfolio management.
 
 ---
 
-## ðŸŒŸ Key Features
+##  Key Features
 
 - **Real-time AI Telemetry**: Live tracking of token usage and estimated costs for:
   - **OpenAI (GPT-4o)**
@@ -18,7 +18,7 @@ The centralized master control panel for the Autonomous Systems agent ecosystem.
 
 ---
 
-## ðŸš€ Getting Started
+##  Getting Started
 
 ### 1. Prerequisites
 - **Python Backend**: The dashboard requires a local API server (usually running via `scripts/dashboard_server.py`) to serve metrics and handle project updates.
@@ -36,7 +36,7 @@ The centralized master control panel for the Autonomous Systems agent ecosystem.
 
 ---
 
-## ðŸ“‚ Project Structure
+##  Project Structure
 
 - `index.html`: The main dashboard interface using a premium "Glassmorphism" design and interactive 3D flip cards.
 - `styles.css`: Custom CSS providing dark mode aesthetics, animated background orbs, and responsive grid layouts.
@@ -45,9 +45,8 @@ The centralized master control panel for the Autonomous Systems agent ecosystem.
 
 ---
 
-## ðŸ› ï¸ Architecture
+##  Architecture
 
 The dashboard is built as a hybrid system:
 - **Frontend**: Modern HTML5/CSS3 and Vanilla JS for real-time DOM updates and animations.
 - **Backend API**: A Python-based micro-service that bridges the local file system (logs/configs) with the web interface.
-
